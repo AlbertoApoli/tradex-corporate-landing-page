@@ -31,4 +31,17 @@ body {
   color: $color-white;
   font-weight: 500;
   line-height: 1.6;
+  background-color: #050520;
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [center-start]
+    repeat(8, [col-start] minmax(min-content, 17rem) [col-end])
+    [center-end]
+    1fr
+    [full-end];
 }
