@@ -1,3 +1,6 @@
+// Variables
+$color-white: #fff;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +10,25 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
+}
+
+button {
+  background-color: initial;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  color: $color-white;
+  font-weight: 500;
+  line-height: 1.6;
 }
