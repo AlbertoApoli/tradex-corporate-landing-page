@@ -22,3 +22,23 @@
     font-size: 1.6rem;
   }
 }
+
+.logo {
+  font-size: 3.2rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+
+  &__img {
+    height: 3.7rem;
+    width: 3.7rem;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
