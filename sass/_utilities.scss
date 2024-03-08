@@ -1,3 +1,9 @@
 .u-capitalize {
   text-transform: capitalize;
 }
+
+.u-linear-gradient-text {
+  background-image: $linear-gradient;
+  background-clip: text;
+  color: transparent;
+}
