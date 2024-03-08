@@ -5,13 +5,7 @@
   font-weight: 600;
 
   &--primary {
-    background-image: linear-gradient(
-      to right bottom,
-      #cd43ff,
-      #fd65a6,
-      #fc9651,
-      #ffbd72
-    );
+    background-image: $linear-gradient;
   }
 
   &--secondary {
@@ -46,8 +40,7 @@
 .title {
   padding: 1.1rem 1.6rem;
   background: linear-gradient(#050520, #050520) padding-box,
-    linear-gradient(to right bottom, #cd43ff, #fd65a6, #fc9651, #ffbd72)
-      border-box;
+    $linear-gradient border-box;
   border-radius: 50em;
   border: 1px solid transparent;
 }
