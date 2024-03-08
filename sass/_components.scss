@@ -43,6 +43,15 @@
   }
 }
 
+.title {
+  padding: 1.1rem 1.6rem;
+  background: linear-gradient(#050520, #050520) padding-box,
+    linear-gradient(to right bottom, #cd43ff, #fd65a6, #fc9651, #ffbd72)
+      border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+}
+
 .heading {
   line-height: 1.2;
 
