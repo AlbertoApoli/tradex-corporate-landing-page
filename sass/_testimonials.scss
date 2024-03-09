@@ -23,6 +23,8 @@
     column-gap: 4rem;
 
     & > * {
+      flex: 1;
+
       &:nth-child(even) {
         margin-top: 3rem;
       }
