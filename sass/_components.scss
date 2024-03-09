@@ -12,6 +12,12 @@
     border: 1px solid $color-white;
   }
 
+  &--tertiary {
+    background: linear-gradient(#050520, #050520) padding-box,
+      $linear-gradient border-box;
+    border: 1px solid transparent;
+  }
+
   &--small {
     font-size: 1.6rem;
   }
