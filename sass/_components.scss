@@ -229,3 +229,33 @@
     }
   }
 }
+
+.slider {
+  overflow: hidden;
+
+  &__slides {
+    white-space: nowrap;
+  }
+
+  &__slide {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% / 3 - 4rem);
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    @media (max-width: 56.25em) {
+      width: calc(100% / 2 - 4rem);
+    }
+
+    @media (max-width: 34.375em) {
+      width: 100%;
+    }
+
+    & > * {
+      white-space: initial;
+    }
+  }
+}
