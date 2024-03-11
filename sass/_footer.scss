@@ -1,0 +1,48 @@
+.footer {
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__company {
+    font-size: 32.7rem;
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+    background: $linear-gradient;
+    background-clip: text;
+    color: transparent;
+    opacity: 0.2;
+  }
+
+  &__company-logo {
+    margin-bottom: 4.5rem;
+  }
+
+  &__links {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+    display: flex;
+    column-gap: 6rem;
+  }
+
+  &__container {
+    align-self: stretch;
+    font-weight: 400;
+    padding: 4.5rem 0 4rem;
+    border-top: 1px solid rgba(#d9d9d9, 0.24);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-size: 2rem;
+    color: rgba($color-white, 0.8);
+  }
+
+  &__social-links {
+    font-size: 1.8rem;
+    display: flex;
+    column-gap: 2.4rem;
+  }
+}
