@@ -1,15 +1,38 @@
 .header {
   grid-column: center-start / center-end;
   grid-row: 1 / 2;
-
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5rem;
 
+  @media (max-width: $breakpoint-lg) {
+    padding: 2rem 1rem;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    justify-content: initial;
+    padding: 2rem 5rem;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 2rem 3rem;
+  }
+
+  &__logo {
+    @media (max-width: $breakpoint-md) {
+      margin-right: auto;
+    }
+  }
+
   &__buttons-container {
     display: flex;
     column-gap: 1.2rem;
+
+    @media (max-width: $breakpoint-sm) {
+      display: none;
+    }
   }
 }
 
@@ -17,15 +40,56 @@
   font-size: 1.6rem;
   text-transform: uppercase;
 
+  @media (max-width: $breakpoint-md) {
+    order: 1;
+  }
+
+  &__menu-btn {
+    display: none;
+    margin-left: 1rem;
+
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+    }
+
+    & > svg {
+      width: 3.2rem;
+      height: 3.2rem;
+      fill: $color-white;
+    }
+  }
+
   &__list {
     display: flex;
     column-gap: 2.8rem;
+
+    @media (max-width: $breakpoint-lg) {
+      column-gap: 1.8rem;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      // display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      display: flex;
+      flex-direction: column;
+      column-gap: initial;
+      padding: 2rem 0;
+      width: 100%;
+      background-color: rgba($color-white, 0.08);
+      display: none;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
     column-gap: 2.8rem;
+
+    @media (max-width: $breakpoint-lg) {
+      column-gap: 1.8rem;
+    }
 
     &:not(:last-child)::after {
       content: "";
@@ -40,10 +104,39 @@
         #ffbd72
       );
       border-radius: 50%;
+
+      @media (max-width: $breakpoint-md) {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      display: none;
+
+      @media (max-width: $breakpoint-sm) {
+        display: initial;
+        padding: 2rem 2.5rem;
+      }
     }
   }
 
   &__link {
+    @media (max-width: $breakpoint-md) {
+      padding: 2rem 5rem;
+      width: 100%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      padding: 2rem 3rem;
+    }
+  }
+
+  &__button {
+    display: none;
+    @media (max-width: $breakpoint-sm) {
+      display: initial;
+      width: 100%;
+    }
   }
 }
 
