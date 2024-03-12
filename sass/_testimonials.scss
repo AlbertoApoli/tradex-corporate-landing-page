@@ -10,6 +10,15 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
 
+  @media (max-width: $breakpoint-xl) {
+    grid-template-columns: 1fr;
+    max-height: initial;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin: 4rem 2rem;
+  }
+
   &::before {
     content: "";
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
@@ -35,6 +44,14 @@
     display: flex;
     column-gap: 4rem;
 
+    @media (max-width: $breakpoint-xl) {
+      order: 1;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      padding: 2rem 2.5rem;
+    }
+
     & > * {
       flex: 1;
 
@@ -47,6 +64,12 @@
   &__list {
     & > * + * {
       margin-top: 3.2rem;
+    }
+
+    &:last-child {
+      @media (max-width: $breakpoint-md) {
+        display: none;
+      }
     }
   }
 }
@@ -98,6 +121,12 @@
   margin-top: 16rem;
   padding-right: 7.5rem;
 
+  @media (max-width: $breakpoint-xl) {
+    margin: 0;
+    padding: 7rem 4rem;
+    text-align: center;
+  }
+
   &__title {
     margin-bottom: 1.5rem;
   }
@@ -115,5 +144,9 @@
 
   &__button {
     width: 70%;
+
+    @media (max-width: $breakpoint-sm) {
+      width: 90%;
+    }
   }
 }
