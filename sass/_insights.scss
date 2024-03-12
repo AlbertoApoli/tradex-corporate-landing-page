@@ -3,9 +3,19 @@
   grid-row: 6 / 7;
   margin: 12rem 0;
 
+  @media (max-width: $breakpoint-md) {
+    margin: 12rem 3rem;
+  }
+
   &__heading-container {
     display: flex;
     margin-bottom: 8rem;
+    gap: 2rem;
+
+    @media (max-width: $breakpoint-lg) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__heading {
@@ -15,11 +25,25 @@
   &__paragraph {
     flex: 1;
     margin-top: 1rem;
+
+    @media (max-width: $breakpoint-lg) {
+      width: 85%;
+      margin: 0 auto 0;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      width: initial;
+    }
   }
 
   &__stats-container {
     display: flex;
     align-items: center;
+
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      text-align: center;
+    }
 
     & > *:first-child {
       flex: 1.3;
@@ -35,14 +59,23 @@
     font-weight: 600;
     line-height: 1.4;
 
+    @media (max-width: $breakpoint-sm) {
+      font-size: 6rem;
+    }
+
     &--big {
       font-size: 14rem;
+
+      @media (max-width: $breakpoint-sm) {
+        font-size: 12rem;
+      }
     }
   }
 
   &__stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 
   &__total-stat-box {
@@ -53,5 +86,9 @@
   &__total-stat-text {
     font-size: 2.4rem;
     color: #7e8492;
+
+    @media (max-width: $breakpoint-sm) {
+      font-size: 1.8rem;
+    }
   }
 }
