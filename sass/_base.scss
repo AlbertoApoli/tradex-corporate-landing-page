@@ -24,6 +24,14 @@ $breakpoint-xl: 75em; // Extra large devices (large desktops, 1200px and up)
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
+
+  @media (max-width: $breakpoint-xl) {
+    font-size: 55%;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    font-size: 50%;
+  }
 }
 
 button {
