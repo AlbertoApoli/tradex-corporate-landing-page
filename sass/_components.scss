@@ -106,6 +106,10 @@
 
       & .accordion__content {
         max-height: 100rem;
+
+        @media (max-width: $breakpoint-md) {
+          max-height: initial;
+        }
       }
     }
   }
@@ -117,6 +121,10 @@
     justify-content: space-between;
     cursor: pointer;
     transition: color 0.5s ease;
+
+    @media (max-width: $breakpoint-sm) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -135,6 +143,10 @@
 
   &__description {
     width: 40%;
+
+    @media (max-width: $breakpoint-sm) {
+      width: initial;
+    }
   }
 
   &__content {
@@ -153,13 +165,25 @@
   overflow: hidden;
   display: flex;
 
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+
   & > * {
     flex: 1;
+
+    @media (max-width: $breakpoint-md) {
+      flex: initial;
+    }
   }
 
   &__img-container {
     background-color: rgba($color-white, 0.2);
     position: relative;
+
+    @media (max-width: $breakpoint-md) {
+      height: 40rem;
+    }
   }
 
   &__img {
