@@ -6,7 +6,29 @@
   display: flex;
   column-gap: 2.4rem;
 
+  @media (max-width: $breakpoint-lg) {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3.4rem;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin: 6.5rem 3rem 8.5rem;
+    column-gap: 1.4rem;
+  }
+
   &__container {
+    @media (max-width: $breakpoint-lg) {
+      width: calc(50% - 2.4rem);
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: calc(50% - 1.4rem);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
   }
 
   &__img-container {
