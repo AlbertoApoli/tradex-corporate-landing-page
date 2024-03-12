@@ -39,3 +39,16 @@ sliderButtons.forEach((btn) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtons = document.querySelectorAll(".toggle-button");
+  toggleButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const targetId = this.getAttribute("data-target");
+      const targetContainer = document.getElementById(targetId);
+      if (targetContainer) {
+        targetContainer.classList.toggle("u-flex-display");
+      }
+    });
+  });
+});
