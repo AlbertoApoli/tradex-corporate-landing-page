@@ -8,6 +8,12 @@ $linear-gradient: linear-gradient(
   #ffbd72
 );
 
+$breakpoint-xs: 20em; // Extra small devices (phones, less than 576px)
+$breakpoint-sm: 36em; // Small devices (phones, 576px and up)
+$breakpoint-md: 50em; // Medium devices (tablets, 800px and up)
+$breakpoint-lg: 62em; // Large devices (desktops, 992px and up)
+$breakpoint-xl: 75em; // Extra large devices (large desktops, 1200px and up)
+
 * {
   margin: 0;
   padding: 0;
