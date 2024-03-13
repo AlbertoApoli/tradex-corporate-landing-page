@@ -10,7 +10,7 @@
   }
 
   &__company {
-    font-size: 20vw;
+    font-size: clamp(1.6rem, 15vw, 32.7rem);
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
     background: $linear-gradient;
