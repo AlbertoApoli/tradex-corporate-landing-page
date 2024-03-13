@@ -8,13 +8,24 @@
   &__list {
     display: flex;
     justify-content: space-evenly;
+
+    @media (max-width: $breakpoint-md) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
   }
 
   &__item {
+    text-align: center;
+    @media (max-width: $breakpoint-md) {
+      width: calc(100% / 3 - 2rem);
+    }
   }
 
   &__img {
     height: 3rem;
+    width: 100%;
     object-fit: contain;
   }
 }
