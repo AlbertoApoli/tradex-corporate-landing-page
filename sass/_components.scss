@@ -265,6 +265,7 @@
 
 .slider {
   overflow: hidden;
+  font-size: 0;
 
   &__slides {
     white-space: nowrap;
@@ -289,6 +290,7 @@
 
     & > * {
       white-space: initial;
+      font-size: initial;
     }
   }
 }
